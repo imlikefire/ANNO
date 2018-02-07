@@ -1,11 +1,7 @@
 body {
     white-space: nowrap;
     min-width: 15%;
-    min-height: 15%;
-}
-
-h1 {
-    font-size: 15px;
+    min-height: 25%;
 }
 
 #container {

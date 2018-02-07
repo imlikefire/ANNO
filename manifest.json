@@ -1,17 +1,30 @@
 {
   "manifest_version": 2,
-
   "name": "ANNO - Audio Annotation Tool",
-  "description": "This extension allows the user to quickly save audio files and more.",
+  "description": "This extension allows the user to quickly manage audio files and more.",
   "version": "1.0",
-
-  "browser_action": {
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
     "default_icon": "icon.png",
     "default_popup": "popup.html",
-    "default_title": "Click here!"
+    "default_title": "ANNO"
   },
   "permissions": [
+    "declarativeContent",
+    "tabs",
     "activeTab",
     "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["popup.js"],
+      "html": ["popup.html"],
+      "css": ["popup.css"],
+      "run_at": "document_end"
+    }
   ]
 }
