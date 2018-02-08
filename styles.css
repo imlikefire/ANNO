@@ -1,0 +1,29 @@
+#sideButton {
+    top: 200px;
+    left: 0;
+    display: flow;
+    position: fixed;
+    color: white;
+    background-color: green;
+    border: 1px;
+    border-radius: 0 10px 10px 0;
+    width: 35px;
+    height: 150px;
+    font-size: 20px;
+    box-shadow: grey;
+}
+
+#sideButton:hover {
+    color: black;
+}
+
+#sideDiv {
+    top: 200px;
+    left: 0;
+    position: fixed;
+    display: none;
+    width: 100px;
+    height: 150px;
+    font-size: 20px;
+    background-color: aqua;
+}
