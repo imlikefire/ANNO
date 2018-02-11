@@ -4,7 +4,7 @@ chrome.runtime.onInstalled.addListener(function () {
             {
                 conditions: [
                     new chrome.declarativeContent.PageStateMatcher({
-                        pageUrl: {urlContains: 'youtube.com'},
+                        pageUrl: {urlContains: 'soundcloud.com'}
                     })
                 ],
                 actions: [new chrome.declarativeContent.ShowPageAction()]
