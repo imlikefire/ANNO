@@ -2,7 +2,9 @@ destroy();
 
 function destroy() {
     let sideButton = document.getElementById("sideButton");
-    let sideDiv = document.getElementById("sideDiv");
+    let formDiv = document.getElementById("formDiv");
+    let displayDiv = document.getElementById("displayDiv");
     sideButton.parentNode.removeChild(sideButton);
-    sideDiv.parentNode.removeChild(sideDiv);
+    formDiv.parentNode.removeChild(formDiv);
+    displayDiv.parentNode.removeChild(displayDiv);
 }
